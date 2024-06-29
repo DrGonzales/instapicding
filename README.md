@@ -1,0 +1,1 @@
+Make images square for Instagram. The original image will be blurred as the background. A shadow can be added and the "normal" image can be scaled. The settings will be saved as cookies and loaded directly, so they are retained. The quality of the images, especially when they are larger than 1400x1400 pixels, does not suffer when saving.
