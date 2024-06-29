@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Instapictorisator</title>
+</head>
+
+<body>  
+    <div id="dropZone">Bild hier!</div>
+   <div class="controlls">
+        <div class="sect">
+            <h2>Hintergrund</h2>
+            <span>Blur</span>
+            <input type="range" min="0" max="100" step="1" id="bg.blur" class="range">
+            <span>Farbe</span>
+            <input type="color" id="bg.color" class="color">
+            <span>Transparenz</span>
+            <input type="range" min="0" max="1" step="0.1" id="bg.alpha" class="range">
+        </div>
+        <div class="sect">
+            <h2>Schatten</h2>
+            <span>Blur</span>
+            <input type="range" min="0" max="100" step="1" id="shadow.blur" class="range">
+            <span>Farbe</span>
+            <input type="color" id="shadow.color" class="color">
+            <span>Transparenz</span>
+            <input type="range" min="0" max="1" step="0.1" id="shadow.alpha" class="range">
+        </div>
+        <div class="sect">
+            <h2>Bild</h2>
+            <span>Größe</span>
+            <input type="range" min="0" max="500" step="1" id="pic.inset" class="range">
+        </div>
+        <div>
+            <button id="downloadButton">Bild mit holen!</button>
+        </div>
+    </div>
+    <div>
+        <h2>Preview</h2>
+        <canvas id="preview" width="400" height="400"></canvas>
+    </div>
+    
+    <div>
+        <canvas id="canvas" width="1400" height="1400"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
